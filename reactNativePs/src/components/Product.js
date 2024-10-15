@@ -1,10 +1,21 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const Product = () => {
+const Product = ({ name }) => {
   return (
-    <View>
-      <Text>Product</Text>
+    <View
+      style={{
+        borderWidth: 1,
+        width: 100,
+        padding: 5,
+        borderRadius: 10,
+        justifyContent: "center",
+        alignItems: "center",
+        margin: 10,
+        height: 50,
+      }}
+    >
+      <Text>{name}</Text>
     </View>
   );
 };

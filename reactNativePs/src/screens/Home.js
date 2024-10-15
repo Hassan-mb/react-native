@@ -1,15 +1,13 @@
 import { View, Text, TextInput, ScrollView } from "react-native";
 import React from "react";
 import CatagoryCard from "../components/CatagoryCard";
+import CatagoryList from "../components/CatagoryList";
+import Product from "../components/Product";
+import ProductList from "../components/ProductList";
 
 const Home = () => {
   return (
-    <View
-      styles={{
-        flex: 1,
-        margin: 10,
-      }}
-    >
+    <View style={{}}>
       <TextInput
         placeholder="Search"
         style={{
@@ -19,8 +17,13 @@ const Home = () => {
           backgroundColor: "lightgray",
         }}
       />
-      <ScrollView horizontal={true}>
-        <CatagoryCard />
+
+      <ScrollView horizontal>
+        <CatagoryList />
+      </ScrollView>
+
+      <ScrollView>
+        <ProductList />
       </ScrollView>
     </View>
   );
